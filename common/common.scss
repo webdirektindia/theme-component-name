@@ -1,0 +1,18 @@
+//techcommunity-related-topics - common.scss
+.custom-related-topics {
+    .custom-related-topics-wrapper {
+        margin: 4.5em 0 1em 0;
+        .related-topics-title {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+/* Hide the related topic list for "webMethods Community Workshop" category [Date: 27-10-2022] */
+body.category.category-user-groups-private-webmethods-community-workshop {
+    .custom-related-topics {
+        .custom-related-topics-wrapper {
+           display: none !important
+        }
+    }
+}

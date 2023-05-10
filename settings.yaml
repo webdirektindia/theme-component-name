@@ -1,0 +1,10 @@
+
+related_topics_title:
+  type: string
+  default: "Related Topics"
+  description:
+    en: Heading text to display above the releated topic list.
+number_of_related_topics_to_display:
+  default: 5
+  description:
+    en: Number of topics to display under related topics section.

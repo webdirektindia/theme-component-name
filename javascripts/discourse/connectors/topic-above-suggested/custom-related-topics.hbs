@@ -1,0 +1,27 @@
+<!-- If our component is true, show this content: -->
+<span>
+    <PluginOutlet @name="above-related-topics" @connectorTagName="div" @outletArgs={{hash model=this.model}} />
+</span>
+{{#if displayRelatedTopics}}
+
+    <div class="custom-related-topics-wrapper">
+    <!-- Show a loading spinner if topics are loading -->
+    {{conditional-loading-spinner condition=loadingTopics}}
+
+    <!-- Unless topics are still loading... -->
+    {{#unless loadingTopics}}
+        <!-- Show the related topic list title -->
+        <h3 id="related-topics-title" class="related-topics-title">
+            {{relatedTopicsTitle}}
+        </h3>
+        <!-- Show the related topic list -->
+        <div class="topics">
+            <BasicTopicList @topics={{relatedTopics}} />
+        </div>
+    {{/unless}}
+    </div>
+{{/if}}
+
+<span>
+    <PluginOutlet @name="below-related-topics" @connectorTagName="div" @outletArgs={{hash model=this.model}} />
+</span>
