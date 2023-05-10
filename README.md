@@ -1,2 +1,2 @@
-# Techcommunity related topics component
-This theme component is used to display tag based related topics on the topic details page above the suggested topics
+# Techcommunity theme component name
+This a test theme component to create a document for deployment process of the component on Live.
